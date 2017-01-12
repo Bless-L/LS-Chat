@@ -1,0 +1,15 @@
+{
+  "name": "ls-chat",
+  "version": "1.0.0",
+  "description": "毕业设计，在线聊天室",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bless_L",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}
