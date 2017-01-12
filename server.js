@@ -9,8 +9,9 @@ server = require('http').createServer(app);
 const io = require('socket.io').listen(server);
 
 app.use('/', express.static(
-    path.resolve(__dirname, 'ls-chat')
+    path.resolve(__dirname, './app/client')
 ));
+app.use('/dist', express.static(path.resolve(__dirname, './dist')));
 
 server.listen(8081, (error) =>{
     if (error) {throw error};
